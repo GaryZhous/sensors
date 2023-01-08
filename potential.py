@@ -11,13 +11,13 @@ while i < 50:
   string_n = b.decode()   
 	reading = float(string_n.rstrip())     
 	data.append(reading)           
-	time.sleep(0.1)            
+	time.sleep(0.01)            
   count += 1
 
 ser.close()
 
 plt.plot(data)
 plt.xlabel('Time (s)')
-plt.ylabel('Potentiometer Reading (v)')
-plt.title('Potentiometer Reading vs Time')
+plt.ylabel('Power (Wh)')
+plt.title('Power vs Time')
 plt.show()
